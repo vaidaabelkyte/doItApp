@@ -1,0 +1,29 @@
+<ion-view view-title="Tasks">
+  <ion-content class="padding">
+      
+      <ion-item class="item-dark" href="#/tab/addTask"> Add a Task </ion-item>
+      
+      <div class="card">
+  <div class="item item-divider">
+    <p>Tasks <p style="text-align: right">Task Text</p></p>
+  </div>
+
+      <div class="card">
+          
+          <ion-list>
+        <ion-item ng-repeat="task in tasks">
+            <div>
+                <i class="icon ion-android-list"></i>
+                {{task.taskName}}
+            </div>
+            
+            
+            <div style="text-align: right">{{task.taskText}}</div>
+        </ion-item>
+      </ion-list>
+        </div>
+      
+      </div>
+      
+  </ion-content>
+</ion-view>
