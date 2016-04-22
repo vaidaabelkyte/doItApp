@@ -50,7 +50,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     }
   })
 
-  .state('tab.addTask', {
+  /*.state('tab.addTask', {
       url: '/addTask',
       views: {
         'tab-addTask': {
@@ -58,7 +58,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
           controller: 'addTaskCtrl'
         }
       }
-    })
+    })*/
   ;
 
   // if none of the above states are matched, use this as the fallback
