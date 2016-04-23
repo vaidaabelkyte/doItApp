@@ -1,29 +1,49 @@
-<ion-view view-title="Tasks">
-  <ion-content class="padding">
-      
-      <ion-item class="item-dark" href="#/tab/addTask"> Add a Task </ion-item>
+<ion-view view-title="T o  D o">
+    <ion-nav-bar class="heading" >
+       
+    </ion-nav-bar>
+  <ion-content class="padding" style="background-color: #ff99ce">
       
       <div class="card">
-  <div class="item item-divider">
-    <p>Tasks <p style="text-align: right">Task Text</p></p>
-  </div>
-
-      <div class="card">
-          
-          <ion-list>
-        <ion-item ng-repeat="task in tasks">
-            <div>
-                <i class="icon ion-android-list"></i>
-                {{task.taskName}}
+          <div class="item item-divider" style="background-color: #ff3385">
+                <ion-checkbox style="background-color: #ff3385" class="checkbox-energized" ng-model="addatask"><h2 class="fontcolor">Add a new Task</h2></ion-checkbox>
+          </div>
+          <div class="item item-text-wrap" ng-show="addatask">
+            <div class="list">
+              <label class="item item-input item-floating-label">
+                <span class="input-label" style="color: #ff3385">Task Name</span>
+                <input type="text" placeholder="What to do?" ng-model="newTask.newTaskName">
+              </label>
+              <label class="item item-input item-floating-label">
+                <span class="input-label" style="color:  #ff3385">Task Text</span>
+                <input type="text" placeholder="Details" ng-model="newTask.newTaskText">
+              </label>
             </div>
-            
-            
-            <div style="text-align: right">{{task.taskText}}</div>
-        </ion-item>
-      </ion-list>
+            <button class="fontcolor button button-block" style="background-color: #ff3385" ng-click="addTask()">
+              Add it to the list
+            </button>  
+          </div>
         </div>
       
-      </div>
+ 
+    <h2 class="fontcolor"  style="font-style: italic; text-shadow:5px 5px 10px white">Things to do</h2>
+
+
+      <div class="card" style="background-color:  #ff3385">
+          <ion-list>
+        <ion-item class="item-remove-animate" ng-repeat="task in tasks">
+            <div>
+                 
+                <h2 style="color: #ff3385"><i class="icon ion-android-list"></i> {{task.taskName}}</h2>
+                <h3 style="font-style: italic; padding-left:1em; color: #ff3385">{{task.taskText}}</h3>
+                
+                <ion-option-button class="button" style="background-color:  #ff3385" ng-click="deleteTask(task)"><h2 style="color: white"><i class="icon ion-ios-close-outline"></i></h2></ion-option-button>
+            </div>
+
+        </ion-item>
+      </ion-list>
+       </div>
+      
       
   </ion-content>
 </ion-view>

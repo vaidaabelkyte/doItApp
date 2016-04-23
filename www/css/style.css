@@ -1,1 +1,21 @@
 /* Empty. Add your own CSS if you like */
+.heading{
+background: url(../../img/pinkpink.jpg);
+     background-size: cover;
+
+     color: white;
+     height: 50px;
+     box-shadow: 0 18px 16px -16px white;
+    font-family:cursive;
+    
+    
+   
+    
+}
+.fontcolor{
+    color: white;
+}
+
+.card{
+     box-shadow: 0 18px 16px -16px white;
+}
