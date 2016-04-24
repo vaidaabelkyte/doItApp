@@ -7,7 +7,10 @@ angular.module('starter.services', [])
   
 =======
   // Some fake testing data
+<<<<<<< HEAD
 >>>>>>> a55542d88117121a5f62e7e7f9d4cb6a1bc53a63
+=======
+>>>>>>> origin/master
  
 
   return {
