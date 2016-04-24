@@ -8,8 +8,13 @@ angular.module('starter.controllers', [])
     
   var tasks = [{
     id: 0,
+<<<<<<< HEAD
     taskName: 'Go to Shop',
     taskText: 'Water, lemon'
+=======
+    taskName: 'Go to shop',
+    taskText: 'Walk'
+>>>>>>> a55542d88117121a5f62e7e7f9d4cb6a1bc53a63
   }, {
     id: 1,
     taskName: 'Clean Room',

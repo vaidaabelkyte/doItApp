@@ -3,7 +3,11 @@ angular.module('starter.services', [])
 .factory('Tasks', function() {
   // Might use a resource here that returns a JSON array
 
+<<<<<<< HEAD
   
+=======
+  // Some fake testing data
+>>>>>>> a55542d88117121a5f62e7e7f9d4cb6a1bc53a63
  
 
   return {
