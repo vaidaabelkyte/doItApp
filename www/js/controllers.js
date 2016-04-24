@@ -1,25 +1,15 @@
 angular.module('starter.controllers', [])
-
+//declaring the variables
 .controller('tasksCtrl', function($scope) {
     var newTask = {
         newTaskName: "",
         newTaskText: ""
     };
-    
+   //default tasks 
   var tasks = [{
     id: 0,
-<<<<<<< HEAD
-<<<<<<< HEAD
     taskName: 'Go to Shop',
     taskText: 'Water, lemon'
-=======
-    taskName: 'Go to shop',
-    taskText: 'Walk'
->>>>>>> a55542d88117121a5f62e7e7f9d4cb6a1bc53a63
-=======
-    taskName: 'Go to shop',
-    taskText: 'Walk'
->>>>>>> origin/master
   }, {
     id: 1,
     taskName: 'Clean Room',
@@ -33,13 +23,13 @@ angular.module('starter.controllers', [])
     taskName: 'Study',
     taskText: '5-8pm'
   }];
-    
+    //function for adding the task
     function addTask(){
         tasks.push({id: tasks.length+1, taskName: newTask.newTaskName, taskText: newTask.newTaskText});
         newTask.newTaskName = "";
         newTask.newTaskText = "";
     }
-    
+    //function to delete the task
     function deleteTask(task){
         tasks.splice(tasks.indexOf(task),1);
     }
